@@ -17,7 +17,7 @@ const BlogPage = async () => {
                 <h1 className='text-5xl font-black mb-2'>Blog Page</h1>
                 <div >
                     {
-                        blogs?.slice(0,10).map((blog) => (
+                        blogs?.slice(0,20).map((blog) => (
                             <div key={blog.id} className="border mb-4 p-2 rounded-sm">
                                 <h1 className="text-2xl font-bold">{blog.title}</h1>
                                 <p className="text-gray-300">{blog.body}</p>
