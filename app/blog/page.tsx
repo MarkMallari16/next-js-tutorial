@@ -8,11 +8,9 @@ interface Blog {
 }
 
 const BlogPage = async () => {
-    const res = await fetch("https://jsonplaceholder.typicode.com/posts", {
-        cache: "no-store",
-        next: { revalidate: 60 }
-    });
+    const res = await fetch("https://jsonplaceholder.typicode.com/posts");
     const blogs: Blog[] = await res.json();
+
 
     return (
         <div className='min-h-screen grid place-items-center'>
@@ -24,6 +22,13 @@ const BlogPage = async () => {
                             <div key={blog.id} className="border mb-4 p-2 rounded-sm">
                                 <h1 className="text-2xl font-bold">{blog.title}</h1>
                                 <p className="text-gray-300">{blog.body}</p>
+                                <div className="flex justify-end items-center gap-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-5">
+                                        <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" />
+                                    </svg>
+
+                                    <p>{new Date().toLocaleTimeString()}</p>
+                                </div>
                             </div>
                         ))
                     }
