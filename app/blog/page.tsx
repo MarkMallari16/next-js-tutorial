@@ -6,8 +6,12 @@ interface Blog {
     title: string;
     body: string;
 }
+
 const BlogPage = async () => {
-    const res = await fetch("https://jsonplaceholder.typicode.com/posts");
+    const res = await fetch("https://jsonplaceholder.typicode.com/posts", {
+        cache: "no-store",
+        next: { revalidate: 60 }
+    });
     const blogs: Blog[] = await res.json();
 
     return (
