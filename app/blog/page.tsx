@@ -3,6 +3,7 @@ import FirstButton from "../ui/button/FirstButton"
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 
+
 interface Blog {
     id: number;
     title: string;
@@ -12,7 +13,6 @@ interface Blog {
 const BlogPage = async () => {
     const res = await fetch("https://jsonplaceholder.typicode.com/posts");
     const blogs: Blog[] = await res.json();
-
 
     return (
         <div className='min-h-screen grid place-items-center'>
@@ -35,8 +35,7 @@ const BlogPage = async () => {
                     }
                 </div>
                 <div className="flex items-center justify-end gap-1 mb-8">
-                <Button variant="outline">Sample Button</Button>
-
+                    <Button variant="outline">Sample Button</Button>
                     <Link href="/users" className="flex rounded-sm text-black p-2 gap-2 font-medium"
                     >Go to Users
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
@@ -45,8 +44,9 @@ const BlogPage = async () => {
                     </Link>
                     <FirstButton likes={10} />
                 </div>
-
+              
             </div>
+
 
         </div>
     )
