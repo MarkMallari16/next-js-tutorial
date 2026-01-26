@@ -1,5 +1,6 @@
 "use client"
 
+import BasicAccordion from "@/components/shared/BasicAccordion"
 import BasicInput from "@/components/shared/BasicInput"
 import BasicSonner from "@/components/shared/BasicSonner"
 import OtpInput from "@/components/shared/OtpInput"
@@ -17,6 +18,12 @@ const Home = () => {
 
       <div className="mt-4">
         <BasicSonner />
+      </div>
+
+      <div className="">
+        <h1 className="text-3xl font-bold">Frequently Asked Question?</h1>
+
+        <BasicAccordion />
       </div>
     </div>
   )
