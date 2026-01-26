@@ -7,6 +7,8 @@ import OtpInput from "@/components/shared/OtpInput"
 import { Label } from "@/components/ui/label"
 
 const Home = () => {
+
+  
   return (
     <div>
       <h1 className="text-2xl font-black">Home page</h1>
@@ -20,9 +22,8 @@ const Home = () => {
         <BasicSonner />
       </div>
 
-      <div className="">
+      <div className="mt-4 mx-4">
         <h1 className="text-3xl font-bold">Frequently Asked Question?</h1>
-
         <BasicAccordion />
       </div>
     </div>
