@@ -36,7 +36,6 @@ const AddDialog = () => {
                         </DialogFooter>
                     </DialogContent>
                 </DialogHeader>
-
             </form>
         </Dialog >
 
