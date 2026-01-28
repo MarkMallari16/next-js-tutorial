@@ -9,7 +9,7 @@ const AddDialog = () => {
         <Dialog>
             <form>
                 <DialogTrigger asChild>
-                    <Button variant="default">Add User</Button>
+                    <Button className='cursor-pointer' variant="default">Add User</Button>
                 </DialogTrigger>
 
                 <DialogHeader>
@@ -30,9 +30,9 @@ const AddDialog = () => {
                         </div>
                         <DialogFooter>
                             <DialogClose asChild>
-                                <Button variant="outline">Cancel</Button>
+                                <Button className='cursor-pointer' variant="outline">Cancel</Button>
                             </DialogClose>
-                            <Button type="submit">Save changes</Button>
+                            <Button className='cursor-pointer' type="submit">Save changes</Button>
                         </DialogFooter>
                     </DialogContent>
                 </DialogHeader>
