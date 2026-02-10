@@ -19,6 +19,8 @@ const page = () => {
         { month: "April", desktop: 73 },
         { month: "May", desktop: 209 },
         { month: "June", desktop: 214 },
+        { month: "July", desktop: 110 },
+
     ]
 
     return (

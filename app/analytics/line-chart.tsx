@@ -29,7 +29,7 @@ const LineChart = ({ data }: any) => {
             <Card>
                 <CardHeader>
                     <CardTitle>Line Chart</CardTitle>
-                    <CardDescription>January - June 2024</CardDescription>
+                    <CardDescription>January - July 2024</CardDescription>
                 </CardHeader>
                 <CardContent>
                     <ChartContainer config={chartConfig}>
