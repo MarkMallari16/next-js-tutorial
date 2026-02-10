@@ -1,4 +1,6 @@
 
+import { Button } from '@/components/ui/button';
+import { Card, CardAction, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import Link from 'next/link'
 
 interface User {
@@ -31,6 +33,22 @@ const UsersPage = async () => {
                     <Link href="/blog" className="rounded-sm bg-white text-black p-2 font-medium">Go to Blog</Link>
                 </div>
             </div>
+
+            <Card>
+                <CardHeader>
+                    <CardTitle>Card Title</CardTitle>
+                    <CardDescription>Sample Description</CardDescription>
+                    <CardAction>
+                        <Button className='cursor-pointer'>Sample Action</Button>
+                    </CardAction>
+                </CardHeader>
+                <CardContent>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti harum recusandae inventore odit ut cum soluta doloremque quo velit laborum?</p>
+                </CardContent>
+                <CardFooter>
+                    <p>Sample Footer</p>
+                </CardFooter>
+            </Card>
         </div>
     )
 }
