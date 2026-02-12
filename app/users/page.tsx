@@ -33,7 +33,6 @@ const UsersPage = async () => {
                     <Link href="/blog" className="rounded-sm bg-white text-black p-2 font-medium">Go to Blog</Link>
                 </div>
             </div>
-
             <Card>
                 <CardHeader>
                     <CardTitle>Card Title</CardTitle>
