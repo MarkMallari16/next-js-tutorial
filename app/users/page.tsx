@@ -45,7 +45,7 @@ const UsersPage = async () => {
                                 alt='profile'
                                 width={100}
                                 height={100}
-                                className='rounded-sm' />
+                                className='rounded-sm'/>
                             <div>
                                 <CardTitle className='text-2xl lg:text-5xl'>
                                     Mark Mallari
