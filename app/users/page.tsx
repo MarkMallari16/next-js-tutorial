@@ -35,11 +35,11 @@ const UsersPage = async () => {
                 </div>
             </div>
 
-            <div>
+            <div className='mx-4 lg:mx-0'>
                 <h1 className='text-4xl pb-2 font-black'>List of users</h1>
                 <Card>
                     <CardHeader>
-                        <div className='flex items-center gap-2'>
+                        <div className='flex items-center gap-4'>
                             <Image
                                 src='/mcto.jpg'
                                 alt='profile'
