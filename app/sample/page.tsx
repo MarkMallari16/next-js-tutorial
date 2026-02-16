@@ -14,7 +14,7 @@ const page = () => {
                 className="max-w-lg rounded-lg border "
             >
                 <ResizablePanel defaultSize="50%">
-                    <div className="flex h-[200px] items-center justify-center p-6">
+                    <div className="flex h-50 items-center justify-center p-6">
                         <span className="font-semibold">Sample</span>
                     </div>
                 </ResizablePanel>
@@ -35,8 +35,6 @@ const page = () => {
                     </ResizablePanelGroup>
                 </ResizablePanel>
             </ResizablePanelGroup>
-
-
             <div>
                 {DRAWER_SIDES.map((side) => (
                     <Drawer key={side} direction={side === "bottom" ? undefined : (side as "top" | "left" | "right")}>
@@ -51,7 +49,7 @@ const page = () => {
                             <DrawerFooter>
                                 <Button>Submit</Button>
                                 <DrawerClose>
-                                    <Button variant="outline">Cancel</Button>
+                                    <Button variant="secondary">Cancel</Button>
                                 </DrawerClose>
                             </DrawerFooter>
                         </DrawerContent>
