@@ -4,6 +4,7 @@ import AddDialog from "@/components/shared/AddDialog"
 import BasicAccordion from "@/components/shared/BasicAccordion"
 import BasicInput from "@/components/shared/BasicInput"
 import BasicSonner from "@/components/shared/BasicSonner"
+import Navbar from "@/components/shared/Navbar"
 import OtpInput from "@/components/shared/OtpInput"
 import { Label } from "@/components/ui/label"
 
@@ -12,6 +13,7 @@ const Home = () => {
 
   return (
     <div>
+      <Navbar/>
       <h1 className="text-2xl font-black">Home page</h1>
       <Label>Hello</Label>
       <OtpInput />
