@@ -1,11 +1,7 @@
-import { Button } from "@/components/ui/button"
-
 const page = () => {
     return (
         <div>
-            <h1 className="text-2xl font-black">This is post page</h1>
-            <Button>Sample Button</Button>
-
+            <h1>Sample Page Post With Nested Route</h1>
         </div>
     )
 }
